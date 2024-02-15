@@ -1,3 +1,41 @@
+#Aquí también debemos importar todas las librerías
+
+import random
+import pandas as pd
+from tqdm import tqdm
+from cred_here_Template import * #Aquí está consuimiendo la API de HERE. Si no la importas, NO te arrojará resultados
+import json
+import requests
+import ast
+
+# Tools
+
+import folium
+from shapely.geometry import Polygon
+import numpy as np
+import geojson
+import folium
+import geopandas as gpd
+from shapely.geometry import Polygon
+import shapely.wkt
+from haversine import haversine, Unit
+import random
+import time
+from pyproj import Geod
+#from polygon_geohasher.polygon_geohasher import geohash_to_polygon
+
+from shapely import wkt
+from geopandas import datasets, GeoDataFrame, read_file, points_from_xy
+from geopandas.tools import overlay
+from geopandas.tools import sjoin
+
+from folium.plugins import MeasureControl
+from folium.plugins import MarkerCluster
+
+import time
+
+
+
 #Función para extraer coordenadas
 
 def get_coord (address, YOUR_API_KEY):
