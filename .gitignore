@@ -1,2 +1,3 @@
 *.csv
 cred_here_Template.py
+__pycache__/
